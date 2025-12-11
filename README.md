@@ -1,79 +1,52 @@
-# 🎮 Core Features
+## is this a miner? – Crypto Mining & Trading Simulator (GUI)
 
-⛏️ Multi-Cryptocurrency Mining
+**is this a miner?** es un simulador de minería y trading de criptomonedas que imita el comportamiento de un minero/“virus”, pero es 100% inofensivo: **no mina criptomonedas reales, no se conecta a internet y no toca tus archivos ni tus datos personales**. Todo lo que ocurre es una simulación local.
 
-Mine dozens of well-known cryptocurrencies (BTC, ETH, SOL, DOGE, SHIB, BNB, and more).
+El proyecto está escrito en **Python** y usa **Tkinter** para ofrecer una interfaz gráfica sencilla y accesible para cualquier persona, incluso si no está familiarizada con la consola.
 
-Each coin has its own volatility and mining difficulty.
+## Características principales
 
-📈 Realistic Market Simulation
+- 🎮 **Simulación de minería**  
+  - Minado por ticks (1, x10, x100) y modo **auto-minado** con actualización en tiempo real.  
+  - Sistema de hash rate con mejoras de hardware (CPU, GPU, rigs, granjas mineras, etc.).
 
-Log-normal price movements.
+- 📊 **Mercado de criptomonedas simulado**  
+  - Precios que fluctúan usando un modelo estocástico (estilo cripto real).  
+  - Soporte para muchas monedas conocidas: BTC, ETH, BNB, DOGE, SOL, ADA, MATIC, DOT, SHIB, etc.  
+  - Eventos de mercado: bull runs, crashes, FUD, pumps individuales.
 
-Bull runs, crashes, FUD events, and sudden pumps.
+- 💼 **Gestión de cartera (wallet)**  
+  - Compra y venta de criptomonedas con dinero fiat.  
+  - Impuestos simulados, costes eléctricos y valor total del portfolio en tiempo real.  
 
-Market sentiment indicator and live price ticker.
+- 🧩 **Mejoras temporales (run actual)**  
+  - Hardware (hash rate) y utilidades (menos electricidad, menos impuestos, seguros contra hack y fallos de hardware).  
+  - Desbloqueo de nuevos packs de criptomonedas.
 
-🤖 Automated Trading Bots (Prestige Only)
+- 🔁 **Sistema de Prestigio**  
+  - Reinicia tu partida a cambio de **puntos de prestigio**.  
+  - Árbol de **mejoras permanentes**: más hash global, menos impuestos, mejor electricidad, eventos de mercado más favorables y desbloqueos extra al inicio.  
+  - **Bots de trading** comprados con prestigio (DCA BTC, scalper de volatilidad, rebalanceo a stablecoins).
 
-DCA bots, volatility scalpers, and stablecoin rebalancers.
+- ⛓ **DeFi / Staking**  
+  - Staking para criptos como ETH, ADA, SOL, MATIC, DOT con intereses por tick.  
 
-Fully automated portfolio management.
+- 📝 **Misiones diarias/semanales/mensuales**  
+  - Objetivos de minado, valor de cartera y desbloqueos.  
+  - Recompensas en puntos de prestigio adicionales.
 
-🧬 Prestige System with Permanent Upgrades
+- 🖥️ **Interfaz gráfica amigable (Tkinter)**  
+  - Pestañas: *Dashboard, Mercado, Mejoras, Misiones, Prestigio, Staking, Ayuda*.  
+  - Tablero con wallet, resumen de misiones, eventos recientes y estado del mercado.  
+  - Controles con botones, listas y cuadros de texto: pensado para usuarios que no usan CMD.
 
-Reset your run to gain prestige levels and points.
+## Tecnologías
 
-Permanent buffs: hash rate, tax reduction, electricity cost reduction, better market odds, and advanced starting conditions.
+- Python 3.x  
+- Tkinter (GUI estándar de Python)  
+- PyInstaller (opcional, para generar ejecutables `.exe` en Windows)
 
-🎯 Mission System
+## Ejecución
 
-Daily, weekly, monthly, and unlock-based missions.
-
-Completing missions rewards prestige points.
-
-🏗️ Upgradeable Mining Infrastructure
-
-CPUs, GPUs, rigs, farms, data centers, and AI optimizers.
-
-Electricity costs and taxation mechanics.
-
-📊 ASCII Interface & Live Charts
-
-Semi-graphical dashboard.
-
-Real-time wallet, market sentiment, and ASCII price charts.
-
-💾 Save & Load System
-
-Continue your progress anytime.
-
-🦠 Fake Virus Intro + Safety Disclaimer
-
-Starts like a malicious crypto miner.
-
-Immediately reveals it's a harmless simulation.
-
-No data collection. No real mining. No network usage.
-
-⚠️ Disclaimer
-
-This game does NOT:
-
-Mine real cryptocurrencies
-
-Access personal data
-
-Use your network
-
-Act as malware or spyware
-
-It is purely a text-based simulation game.
-
-🛠️ Technology
-
-Language: Python 3
-
-Interface: ASCII / Terminal UI
-
-Distribution: Windows .exe via PyInstaller
+```bash
+python is_this_a_miner_gui.py
